@@ -36,7 +36,7 @@ public class SecurityConfig {
                 // ✅ CORS (IMPORTANT FOR REACT)
                 .cors(cors -> cors.configurationSource(request -> {
                     CorsConfiguration config = new CorsConfiguration();
-                    config.setAllowedOrigins(List.of("http://localhost:5173","https://observex.vercel.app/"));
+                    config.setAllowedOrigins(List.of("http://localhost:5173","https://observex.vercel.app/","https://observex-frontend-soco.vercel.app/"));
                     config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     config.setAllowedHeaders(List.of("*"));
                     config.setAllowCredentials(true);
